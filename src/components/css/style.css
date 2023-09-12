@@ -1,0 +1,114 @@
+/* style.css */
+
+/* Overall box styling */
+.box {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .box:hover {
+    background-color: #dcdcdc;
+  }
+  
+  /* Input field styling */
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .inputField:focus,
+  .btn:focus {
+    outline: 2px solid #0074cc;
+  }
+  
+  /* Styling for the message when no data is found */
+  .box p {
+    font-size: 18px;
+    color: #ff0000;
+    margin-top: 20px;
+  }
+  
+  /* Styling for location and temperature information */
+  .info {
+    text-align: center;
+    color: #333;
+  }
+  
+  .location {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .temp {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .tempmin_max {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  /* Wave animation styling (you can replace with your own animations) */
+ /* Wave animation styling */
+.Wave {
+    position: relative;
+    height: 20px;
+    background: linear-gradient(90deg, transparent 10%, #0074cc 25%, transparent 40%);
+    background-size: 200% 100%;
+    animation: waveAnimation 2s linear infinite;
+  }
+  
+  @keyframes waveAnimation {
+    0% {
+      background-position: 200% 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  /* Styling for the street view icon */
+  .fa-street-view {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: #0074cc;
+  }
+  
+  /* Button Styling */
+  .btn {
+    background-color: #0074cc;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #0059a6;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .box {
+      width: 100%;
+    }
+  }
+  
